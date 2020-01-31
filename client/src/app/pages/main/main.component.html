@@ -1,0 +1,25 @@
+<fa class="statistics" name="bar-chart" (click)="onStatistics(statistics)"></fa>
+<div class="output">
+  <h1 class="main-title">ROCK – PAPER – SCISSORS</h1>
+  <h2 class="description">Rock Paper Scissors is a zero sum game that is usually played by two people using their hands
+    and no tools. The idea is to make shapes with an outstretched hand where each shape will have a certain degree of
+    power and will lead to an outcome.</h2>
+  <h2 class="order">SELECT YOUR BET</h2>
+  <div class="main-div-card">
+    <app-icon-card *ngFor="let bet of allBets$|async"
+                   [bet]="bet" [loaderIcon]="false"
+                   class="main-icon-card"
+                   (click)="onSelectBet(content, loader, bet)"></app-icon-card>
+  </div>
+</div>
+
+<ng-template #loader let-modal>
+  <app-waiting [userChoice]="userChoice"></app-waiting>
+</ng-template>
+<ng-template #content let-modal>
+ <app-result [curbResponse]="curbResponse$ | async"></app-result>
+</ng-template>
+<ng-template #statistics let-modal>
+<app-statistics [games]="statResponse$ | async"></app-statistics>
+</ng-template>
+

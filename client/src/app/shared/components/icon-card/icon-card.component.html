@@ -1,0 +1,10 @@
+<div class="icon-card">
+  <div *ngIf="loaderIcon">
+    <img class="single-icon" src="../../../../assets/loader.svg">
+    <img class="curb-logo" src="../../../../assets/curb_logo.png">
+  </div>
+  <div *ngIf="!loaderIcon">
+    <img class="single-icon" src="{{bet.picture}}">
+    <h2 *ngIf="!isResult" class="card-text">{{bet.name}}</h2>
+  </div>
+</div>

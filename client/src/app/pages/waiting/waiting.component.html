@@ -1,0 +1,10 @@
+
+<button type="button" class="close" aria-label="Close" (click)="dismiss()">
+  <img class="my-close" src="../../../assets/close.svg">
+</button>
+     <h1 class="main-title">WAITING CURB’S CHOOSE</h1>
+  <div class="modal-body">
+    <app-icon-card [bet]="userChoice" [loaderIcon]="false" class="icon-card"></app-icon-card>
+    <app-icon-card [loaderIcon]="true" class="icon-card"></app-icon-card>
+  </div>
+

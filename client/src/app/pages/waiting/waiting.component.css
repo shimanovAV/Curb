@@ -1,0 +1,34 @@
+.my-close{
+  width: 100%;
+  height: 100%;
+}
+.close{
+  margin-top: 6%;
+  margin-right: 6%;
+  width: 3%;
+  height: 4.5%;
+  outline: none;
+}
+.main-title{
+  display: block;
+  font-family: Montserrat;
+  font-size: 2.4375rem;
+  width: 100%;
+  letter-spacing: 0;
+  color: #36006C;
+  opacity: 1;
+  text-align-last: center;
+  margin-top: 10%;
+}
+.modal-body{
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.icon-card{
+  margin-bottom: 10%;
+  display: flex;
+}
+

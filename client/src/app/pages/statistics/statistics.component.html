@@ -1,0 +1,28 @@
+<button type="button" class="close" aria-label="Close" (click)="dismiss()">
+  <img class="my-close" src="../../../assets/close.svg">
+</button>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th class="stat-title" scope="col">#</th>
+    <th class="stat-title" scope="col">User choice</th>
+    <th class="stat-title" scope="col">Curb choice</th>
+    <th class="stat-title" scope="col">Winner</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let game of pgGames">
+    <th class="description" scope="row">{{ game.id }}</th>
+    <td class="description">
+      {{game.userChoice}}
+    </td>
+    <td class="description">{{game.curbChoice}}</td>
+    <td class="description">{{game.winner}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="d-flex justify-content-between p-2">
+  <ngb-pagination [rotate]="true" [maxSize]="5" [collectionSize]="games.length" [(page)]="page" [pageSize]="pageSize">
+  </ngb-pagination>
+</div>

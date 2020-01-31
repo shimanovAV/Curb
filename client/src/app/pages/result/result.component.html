@@ -1,0 +1,9 @@
+<button type="button" class="close" aria-label="Close" (click)="dismiss()">
+  <img class="my-close" src="../../../assets/close.svg">
+</button>
+<h1 class="main-title">{{curbResponse.result}}</h1>
+<h2 class="description">{{curbResponse.description}}</h2>
+<div class="modal-body">
+  <app-icon-card [bet]="curbResponse.winnerBet" [isResult]="true"></app-icon-card>
+</div>
+  <button type="button" class="my-button" (click)="dismiss()">Ok</button>

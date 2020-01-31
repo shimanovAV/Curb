@@ -1,0 +1,39 @@
+.icon-card:hover{
+  background: #F8F8F8;
+}
+.icon-card {
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  width: 15rem;
+  height: 17.0625rem;
+  align-self: baseline;
+}
+.card-text{
+  display: block;
+  text-align: center;
+  letter-spacing: 0;
+  color: #36006C;
+  opacity: 1;
+  margin-bottom: 2.0625rem;
+}
+.curb-logo{
+  margin-top: 2.0625rem;
+  margin-bottom: 2.0625rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent 0% 0% no-repeat padding-box;
+}
+
+.single-icon{
+  margin-top: 2.875rem;
+  margin-bottom: 1.625rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5.25rem;
+  height: 9.384375rem;
+  background: transparent 0% 0% no-repeat padding-box;
+}

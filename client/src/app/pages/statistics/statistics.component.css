@@ -1,0 +1,59 @@
+.description {
+  font-family: Roboto;
+  font-size: 2rem;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 0.54;
+}
+
+.stat-title {
+  font-family: Montserrat;
+  font-size: 2.4375rem;
+  letter-spacing: 0;
+  color: #36006C;
+  opacity: 1;
+}
+
+.my-close {
+  width: 100%;
+  height: 100%;
+}
+
+.close {
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 3%;
+  height: 4.5%;
+  outline: none;
+}
+
+ngb-pagination {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  color: #FFFFFF;
+  width: 80%;
+  height: 4.5625rem;
+  background-color: #36006C;
+  border-radius: 0.3125rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/deep/ .pagination .page-item .page-link {
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+/deep/ .pagination .page-item {
+  border-radius: 0 !important;
+  width: 18% !important;}
+
+/deep/ .pagination .page-link {
+  color: #FFFFFF !important;
+  width: 80% !important;
+  height: 4.5625rem !important;
+  background-color: #36006C !important;
+  border-radius: 0.3125rem !important;
+}
